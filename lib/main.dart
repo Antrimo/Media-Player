@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:media/Screens/splash.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,10 +15,14 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+    return SafeArea(
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: const Splash(),
       ),
     );
   }
