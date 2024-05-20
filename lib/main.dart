@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:media/Screens/music.dart';
 import 'package:media/Screens/splash.dart';
 
 void main() {
@@ -22,7 +23,7 @@ class _MyAppState extends State<MyApp> {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const Splash(),
+        home: const Audio(),
       ),
     );
   }
