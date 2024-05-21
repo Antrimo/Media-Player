@@ -1,23 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:media/Screens/splash.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatefulWidget {
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  State<MyApp> createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+    return const SafeArea(
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: Splash(),
       ),
     );
   }
