@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:media/Screens/video.dart';
 
 class Splash extends StatefulWidget {
   const Splash({
@@ -16,7 +17,14 @@ class _SplashState extends State<Splash> {
     return Scaffold(
       backgroundColor: Colors.blue,
       body: GestureDetector(
-        onTap: () {},
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const LocalVideoPlayer(),
+            ),
+          );
+        },
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
