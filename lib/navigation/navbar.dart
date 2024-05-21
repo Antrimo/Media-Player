@@ -13,7 +13,7 @@ class Nav extends StatefulWidget {
 
 class _NavState extends State<Nav> {
   final List<Widget> pages = [
-    const Music(),
+    const LocalMusicPlayer(),
     const LocalVideoPlayer(),
   ];
 
