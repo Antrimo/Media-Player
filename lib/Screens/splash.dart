@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:media/Screens/video.dart';
+import 'package:media/navigation/navbar.dart';
 
 class Splash extends StatefulWidget {
   const Splash({
@@ -21,7 +21,7 @@ class _SplashState extends State<Splash> {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => const LocalVideoPlayer(),
+              builder: (context) => const Nav(),
             ),
           );
         },

@@ -52,13 +52,6 @@ class _LocalVideoPlayerState extends State<LocalVideoPlayer> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.blue,
-        title: const Text(
-          'Video Player',
-          style: TextStyle(color: Colors.white),
-        ),
-      ),
       body: Center(
         child: _videoPath == null
             ? ElevatedButton(
