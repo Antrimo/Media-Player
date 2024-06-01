@@ -1,4 +1,4 @@
-package com.example.media
+package com.example.app1
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,6 +1,6 @@
+import 'package:app1/navigation/navbar.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:media/navigation/navbar.dart';
 
 class Splash extends StatefulWidget {
   const Splash({

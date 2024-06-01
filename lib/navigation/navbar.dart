@@ -1,8 +1,9 @@
+import 'package:app1/Screens/music.dart';
+import 'package:app1/Screens/video.dart';
 import 'package:flutter/material.dart';
 
 import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:media/Screens/music.dart';
-import 'package:media/Screens/video.dart';
+
 
 class Nav extends StatefulWidget {
   const Nav({super.key});
