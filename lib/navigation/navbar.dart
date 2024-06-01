@@ -25,15 +25,18 @@ class _NavState extends State<Nav> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
+          automaticallyImplyLeading: false,
           backgroundColor: Colors.blue,
-          title: const Text(
-            'Media Player',
-            style: TextStyle(color: Colors.white),
+          title: const Center(
+            child: Text(       
+              'Media Player',
+              style: TextStyle(color: Colors.white,fontFamily: "Cursive",),
+            ),
           ),
         ),
         body: pages[currentPage],
         bottomNavigationBar: Container(
-          color: const Color.fromARGB(255, 11, 17, 70),
+          color: const Color.fromARGB(255, 59, 40, 128),
           child: Padding(
             padding: const EdgeInsets.all(10.0),
             child: GNav(
@@ -50,7 +53,6 @@ class _NavState extends State<Nav> {
                   iconSize: 30.0,
                 ),
                 GButton(
-                  // key: Key('profile'),
                   icon: Icons.people,
                   iconSize: 30.0,
                 ),
